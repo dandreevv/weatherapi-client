@@ -1,8 +1,11 @@
-## It's a Python Client for WeatherAPI.com
+## Python Client for WeatherAPI.com
 
 ## Usage
 **To get the weather just init the Client:**
 ```python
+import httpx
+import weatherapi
+
 client = weatherapi.Client(
     session=httpx.Client(
         base_url="http://api.weatherapi.com/v1",
